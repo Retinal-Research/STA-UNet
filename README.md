@@ -8,4 +8,5 @@ In recent years, significant progress has been made in the medical image analysi
 
 ## Training on Synapse Dataset 
 
+The datasets we used are provided by TransUnet's authors. The preprocessed Synapse dataset is accessed from [here](https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd).
 
