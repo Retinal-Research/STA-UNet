@@ -3,7 +3,7 @@ In recent years, significant progress has been made in the medical image analysi
 
 ## Model Architecture
 
-![Model Overview](https://github.com/Retinal-Research/STA-UNet/blob/master/images/architeacture%20illustration.pptx)
+![Model Overview](https://github.com/Retinal-Research/STA-UNet/blob/master/images/architecture%20illustration.png)
 
 
 ## Training on Synapse Dataset 
