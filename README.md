@@ -5,8 +5,10 @@ In recent years, significant progress has been made in the medical image analysi
 
 ![Model Overview](https://github.com/Retinal-Research/STA-UNet/blob/master/images/architecture%20illustration.png)
 
+## Visual Comparison with existing methods. 
 
+![Results](https://github.com/Retinal-Research/STA-UNet/blob/master/images/synapse%20illustration.png)
 ## Training on Synapse Dataset 
 
-The datasets we used are provided by TransUnet's authors. The preprocessed Synapse dataset is accessed from [here](https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd).
+The datasets we used are provided by TransUnet's authors. The preprocessed Synapse dataset is accessed from [here](https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd). Place this dataset appropriately and run the train.py file for training. The default parameters are already loaded in the arguments. Can be customized accordingly. test.py is scripted to run the inference on the customizable range of epoch's saved model weights. 
 
