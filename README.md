@@ -3,7 +3,7 @@ In recent years, significant progress has been made in the medical image analysi
 
 ## Model Architecture
 
-
+[STA Module](
 
 
 ## Training on Synapse Dataset 
