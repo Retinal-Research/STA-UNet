@@ -33,8 +33,22 @@ To get a local copy up and running follow these simple steps.
 The datasets we used are provided by TransUnet's authors. The preprocessed Synapse dataset is accessed from [here](https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd). extract the zip file and copy the **data** folder to your project directory.
 
 ## Inference on Synapse Dataset
-model_weight
 The pre-trained weights on Synapse Dataset can be downloaded from [here](https://drive.google.com/drive/folders/1hjoffuESP3bAnV_SSGmkvhHwjtj8DWvz?usp=sharing). After extracting the weights file to your **OUTPUT_PATH** (and downloading the Synapse dataset). You can run the following command in terminal to infer on the testing set using proposed STA-UNet. 
 
 ```sh
 python test.py --output_dir OUTPUT_PATH --max_epochs 150
+```
+
+## Training on Synapse Dataset
+To train from the scratch after placing the data as instructed, run the following command in your terminal (from the project directory). The arguments can be customized in the begining section of the **train.py** script
+
+```sh
+python train.py --output_dir OUTPUT_PATH
+```
+
+### Thanks for the code provided by:
+
+SwinUnet: https://github.com/HuCaoFighting/Swin-Unet
+HiFormer: https://github.com/amirhossein-kz/hiformer
+CASCADE: https://github.com/SLDGroup/CASCADE
+UCTransNet: https://github.com/mcgregorwwww/uctransnet
