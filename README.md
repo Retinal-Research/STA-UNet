@@ -28,7 +28,7 @@ To get a local copy up and running follow these simple steps.
    ```sh
    pip install -r requirements.txt
    
-## Training on Synapse Dataset 
+## Downloading Synapse Dataset 
 
-The datasets we used are provided by TransUnet's authors. The preprocessed Synapse dataset is accessed from [here](https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd). Place this dataset appropriately and run the train.py file for training. The default parameters are already loaded in the arguments. Can be customized accordingly. test.py is scripted to run the inference on the customizable range of epoch's saved model weights. 
+The datasets we used are provided by TransUnet's authors. The preprocessed Synapse dataset is accessed from [here](https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd).
 
