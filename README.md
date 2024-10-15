@@ -8,6 +8,26 @@ In recent years, significant progress has been made in the medical image analysi
 ## Visual Comparison with existing methods. 
 
 ![Results](https://github.com/Retinal-Research/STA-UNet/blob/master/images/synapse%20illustration.png)
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+- [Git](https://git-scm.com)
+- [Python](https://www.python.org/downloads/) and [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) (optional)
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Retinal-Research/STA-UNet.git
+
+2. Create a Python Environment and install the required libraries by running
+   ```sh
+   pip install -r requirements.txt
+   
 ## Training on Synapse Dataset 
 
 The datasets we used are provided by TransUnet's authors. The preprocessed Synapse dataset is accessed from [here](https://drive.google.com/drive/folders/1ACJEoTp-uqfFJ73qS3eUObQh52nGuzCd). Place this dataset appropriately and run the train.py file for training. The default parameters are already loaded in the arguments. Can be customized accordingly. test.py is scripted to run the inference on the customizable range of epoch's saved model weights. 
