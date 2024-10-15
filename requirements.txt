@@ -1,0 +1,10 @@
+torch==1.10.0
+logging
+tqdm==4.62.3
+torchvision 
+tensorboardX 
+medpy 
+seaborn 
+scipy
+matplotlib
+imageio
