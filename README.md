@@ -48,7 +48,4 @@ python train.py --output_dir OUTPUT_PATH
 
 ### Thanks for the code provided by:
 
-SwinUnet: https://github.com/HuCaoFighting/Swin-Unet
-HiFormer: https://github.com/amirhossein-kz/hiformer
-CASCADE: https://github.com/SLDGroup/CASCADE
-UCTransNet: https://github.com/mcgregorwwww/uctransnet
+SelfReg-UNet: https://github.com/ChongQingNoSubway/SelfReg-UNet
