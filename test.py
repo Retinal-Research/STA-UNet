@@ -132,29 +132,30 @@ if __name__ == "__main__":
     
     
     
-    for epoch in reversed(range(157,args.max_epochs)):
-        if (epoch+1)%2==0:
-            snapshot = os.path.join(args.output_dir, f'epoch_{epoch}.pth')
-
-            msg = net.load_state_dict(torch.load(snapshot), strict = False)
-            print("self trained vanilla unet",msg)
-            snapshot_name = f'{args.output_dir}'+snapshot.split('/')[-1]
-
-            # log_folder = f'./test_log/test_log_{args.output_dir}'
-            log_folder = f'./test_log/'
-            os.makedirs(log_folder, exist_ok=True)
-            logging.basicConfig(filename=log_folder + '/'+snapshot_name+".txt", level=logging.INFO, format='[%(asctime)s.%(msecs)03d] %(message)s', datefmt='%H:%M:%S')
-            logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
-            logging.info(str(args))
-            logging.info(snapshot_name)
-
-            # if args.is_savenii:
-            args.test_save_dir = os.path.join(args.output_dir, "predictions")
-            test_save_path = args.test_save_dir 
-            os.makedirs(test_save_path, exist_ok=True)
-            # else:
-            # test_save_path = None
-            inference(args, net, test_save_path)
+    # for epoch in reversed(range(157,args.max_epochs)):
+    #     if (epoch+1)%2==0:
+    epoch = '150' ##Can be changed based on your best model. We fix it at 150 it was the best performing weight out of all 300 epochs.
+    snapshot = os.path.join(args.output_dir, f'epoch_{epoch}.pth')
+    
+    msg = net.load_state_dict(torch.load(snapshot), strict = False)
+    print("self trained vanilla unet",msg)
+    snapshot_name = f'{args.output_dir}'+snapshot.split('/')[-1]
+    
+    # log_folder = f'./test_log/test_log_{args.output_dir}'
+    log_folder = f'./test_log/'
+    os.makedirs(log_folder, exist_ok=True)
+    logging.basicConfig(filename=log_folder + '/'+snapshot_name+".txt", level=logging.INFO, format='[%(asctime)s.%(msecs)03d] %(message)s', datefmt='%H:%M:%S')
+    logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
+    logging.info(str(args))
+    logging.info(snapshot_name)
+    
+    # if args.is_savenii:
+    args.test_save_dir = os.path.join(args.output_dir, "predictions")
+    test_save_path = args.test_save_dir 
+    os.makedirs(test_save_path, exist_ok=True)
+    # else:
+    # test_save_path = None
+    inference(args, net, test_save_path)
 #     snapshot = os.path.join(args.output_dir, 'best_model.pth')
 #     if not os.path.exists(snapshot): snapshot = snapshot.replace('best_model', 'epoch_'+str(args.max_epochs-1))
 #     msg = net.load_state_dict(torch.load(snapshot))
